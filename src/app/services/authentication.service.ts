@@ -23,7 +23,7 @@ export class AuthenticationService {
      return this.afAuth.auth.signOut();
    }
 
-   resetPassword(email: string){
+   async resetPassword(email: string){
      this.afAuth.auth.sendPasswordResetEmail(email);
    }
 }
